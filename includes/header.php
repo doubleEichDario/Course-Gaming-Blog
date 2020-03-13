@@ -17,7 +17,7 @@
   <body>
     <header>
 
-      <div id="logo">
+      <div class="logo">
         <a href="index.php">
           Blog de Videojuegos
         </a>

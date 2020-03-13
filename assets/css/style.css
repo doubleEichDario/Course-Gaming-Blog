@@ -63,17 +63,17 @@ body{
 
 header {
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 0 0.5rem;
 }
 
-/*LOGOTIPO*/
-#logo{
-    float:left;
-    width: 540px;
-    height: 110px;
+
+.logo{
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-#logo a {
+.logo a {
   font-family: "fajala", Helvetica;
   font-size: 2rem;
   letter-spacing: 0.3rem;
