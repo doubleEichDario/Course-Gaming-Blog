@@ -28,11 +28,15 @@
     endif;
  ?>
 
+    <div class="row">
+        <div class="off-4 my-2 back">
+            <a href="index.php"></a>
+        </div>
+    </div>
+
 </div>
 
 
-<!-- Footer -->
-<?php require_once '../blog_project/includes/footer.php'; ?>
 
-<!-- Scripts -->
+<?php require_once '../blog_project/includes/footer.php'; ?>
 <?php require_once '../blog_project/includes/scripts.php'; ?>

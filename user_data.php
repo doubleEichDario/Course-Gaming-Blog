@@ -3,33 +3,36 @@
 <?php require_once 'includes/sidebar.php'; ?>
 
 <div id="principal">
-  <h3>Modifica tus datos</h3>
+    <div class="center">
+        <h1>Modifica tus datos</h1>
+    </div>
+    <div class="row my-3">
+        <div class="col-8 off-2">
+        <?php if(isset($_SESSION['completed'])): ?>
+        <div class="alert success-alert">
+            <?= $_SESSION['completed']; ?>
+        </div>
 
-  <!-- Registering Errors -->
+        <?php elseif(isset($_SESSION['errors']['general'])): ?>
+            <div class="alert error-alert"><?= $_SESSION['errors']['general'] ?></div>
+        <?php endif; ?>
 
-  <?php if(isset($_SESSION['completed'])): ?>
-     <div class="alert success-alert">
-       <?= $_SESSION['completed']; ?>
-     </div>
+        <form action="update_user_data.php" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" value="<?= $_SESSION['user']['forename'] ?>">
+            <?php echo isset($_SESSION['errors']) ? showError($_SESSION['errors'], 'forename') : ''; ?>
 
-  <?php elseif(isset($_SESSION['errors']['general'])): ?>
-    <div class="alert error-alert"><?= $_SESSION['errors']['general'] ?></div>
-  <?php endif; ?>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" value="<?= $_SESSION['user']['surname'] ?>">
+            <?php echo isset($_SESSION['errors']) ? showError($_SESSION['errors'], 'surname') : ''; ?>
 
-  <form action="update_user_data.php" method="POST">
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" value="<?= $_SESSION['user']['forename'] ?>">
-    <?php echo isset($_SESSION['errors']) ? showError($_SESSION['errors'], 'forename') : ''; ?>
+            <input class="auto" type="submit" name="submit" value="Modificar">
+        </form>
+        <?php deleteError(); ?>
 
-    <label for="apellidos">Apellidos</label>
-    <input type="text" name="apellidos" value="<?= $_SESSION['user']['surname'] ?>">
-    <?php echo isset($_SESSION['errors']) ? showError($_SESSION['errors'], 'surname') : ''; ?>
-
-    <input type="submit" name="submit" value="Modificar">
-  </form>
-  <?php deleteError(); ?>
-
-</div> <!-- Principal -->
+        </div>
+    </div>
+</div><!-- principal -->
 
 
 

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+@font-face {
+  font-family: "fajala";
+  src: url(../fonts/fuente.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Helvetica;
+  text-decoration: none; }
+
+#sidebar {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

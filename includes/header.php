@@ -7,21 +7,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,  user-scalable=no">
-    <link rel="stylesheet" href="assets\css\style.css">
-    <!-- <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Last-Modified" content="0">
-    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-    <meta http-equiv="Pragma" content="no-cache"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/mylib.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/icons/foundation-icons/foundation-icons.css">
     <title>Blog de Videojuegos</title>
   </head>
   <body>
-    <header id="cabecera">
+    <header>
+
       <div id="logo">
         <a href="index.php">
           Blog de Videojuegos
         </a>
       </div>
-
 
       <nav id="menu">
         <ul>
